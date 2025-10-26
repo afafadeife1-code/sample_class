@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS CLASS</title>
+    <!-- internal styling -->
+    <style>
+        /*  selector - this is how we target HTML tag we want to style */
+        /* 
+            ways we can target html tag to style
+            - html tag name - <div>, <p>, <h2> etc
+            - attributes
+        */
+        /* reset */
+        /* we select all html tag on the page (using *) then remove the default styling */
+        *{
+            /* margin - pass spaces outside a box */
+            margin: 0;
+            /* padding - pass spaces inside a box */
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            /* h1 styling goes in here */
+            color: white;
+            font-size: 20px;
+            padding-left: 20px;
+            padding-top: 15px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+            margin: 20px;
+            
+            /* top right bottom left - clockwise */
+            /* padding: 100px 80px 50px 20px; */
+
+            /* shorthand */
+            /* top-bottom left-right */
+            /* top-bottom must take the same value */
+            padding: 20px 10px;
+            
+            /* shorthand */
+            /* top-right-bottom-left */
+            /* padding: 20px; */
+        }
+        #first-heading-tag{
+            background-color: black;
+            /* display: none; */
+        }
+        #second-heading-tag{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        two types of element
+         - block level element/html-tag - always take full width - div, h1, h2, p etc
+         - inline level element/html-tag - base on the content - span, input, img etc
+    -->
+    <h1 id="first-heading-tag">CSS Class - this is expected to take a background color of red and text color of white</h1>
+    <!-- CASCADING STYLE SHEET - for styling/beautification -->
+     <!-- User Interface -->
+      <!-- we have three ways we can link CSS to our projects
+        - internal - <style> tag
+        - inline - opening html tag
+        - external - external css file then linked to HTML file 
+      -->
+    <h2>First Blog Title <span style="font-size: 15px;color: gray;">20th Oct 2025</span></h2>
+    <h1 id="second-heading-tag">HTML STYLING - this is expected to take a background color of black, and text color white</h1>
+    <span style="background-color: purple;">HTML STYLING - this is expected to take a background color of black, and text color white blue green</span>
+    <h3 style="background-color: blue;">this is an inline level element 2</h3>
+    <span style="background-color: orange;">this is an inline level element 2</span>
+    <span style="background-color: pink;">this is an inline level element 3</span>
+</body>
+</html>
