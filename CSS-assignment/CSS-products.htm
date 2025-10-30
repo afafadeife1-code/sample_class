@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .product {
+        border-style: solid;
+        border-radius: 20px;
+        border-width: 3px;
+        border-color: black;
+        margin: 20px;
+        padding: 10px 30px;
+        height: 100%;
+        width: 100%;
+        box-shadow: 5px 10px 20px black;
+      }
+      .price {
+        color: rgb(21, 154, 21);
+      }
+      .product img {
+        height: 500px;
+        width: 500px;
+        border-style: solid;
+        border-radius: 15px;
+        border-width: 1px;
+      }
+      #lip-gloss {
+        background-color: rgb(235, 44, 107);
+      }
+      #highlighter {
+        background-color: rgb(190, 46, 94);
+      }
+      #perfume {
+        background-color: rgb(215, 88, 130);
+      }
+      .product-description {
+        font-size: medium;
+        color: rgb(254, 212, 235);
+      }
+      #cart {
+        background-color: rgb(249, 170, 183);
+        border-radius: 8px;
+        padding: 2px 3px;
+        box-shadow: 5px 5px 12px black;
+      }
+      #cart:hover {
+        box-shadow: 5px 5px 5px black;
+      }
+      #discount {
+        text-align: right;
+      }
+      .label {
+        color: white;
+        background-color: rgb(180, 83, 130);
+        border-radius: 10px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(128, 19, 90);
+        padding: 2px;
+      }
+      .product-header {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px;
+        height: 600px;
+        width: 100%;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+        margin: 10px 1px;
+      }
+      #product-header-one {
+        background-image: url("https://images.unsplash.com/photo-1687195821497-fed0346cdc34?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1287");
+      }
+      #product-header-two {
+        background-image: url("https://images.unsplash.com/photo-1580694500583-21a6189e6b56?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070");
+      }
+      #product-header-three {
+        background-image: url("https://images.unsplash.com/photo-1615634260167-c8cdede054de?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2832");
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Products Display</h1>
+    <section class="product" id="lip-gloss">
+      <div class="product-header" id="product-header-one">
+        <h3 id="discount">20%OFF</h3>
+        <!-- <img
+          src="https://images.unsplash.com/photo-1687195821497-fed0346cdc34?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1287"
+          alt="lip-gloss"
+        /> -->
+      </div>
+      <div class="product-body">
+        <label class="label" for="product">Beauty</label>
+        <h2 class="product-name">Lip Gloss</h2>
+        <p class="product-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+          necessitatibus dolor architecto eveniet illo tempore repellat, sed et
+          ipsa quod aspernatur nisi quam dignissimos fugiat? Repellendus animi
+          voluptatibus commodi ipsa blanditiis, est eaque tenetur dolor
+          cupiditate quam? Officia, ex ullam?
+        </p>
+        <h3 class="price"><b>Price: $250</b></h3>
+      </div>
+      <div class="product-action">
+        <button id="cart">Add to cart</button>
+      </div>
+    </section>
+    <section class="product" id="highlighter">
+      <!--img
+        src="https://images.unsplash.com/photo-1580694500583-21a6189e6b56?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070"
+        alt="highlighter"-->
+      <div class="product-header" id="product-header-two">
+        <h3 id="discount">10%OFF</h3>
+      </div>
+      <div class="product-body">
+        <label class="label" for="product">Beauty</label>
+        <h2 class="product-name">Highlighter</h2>
+        <p class="product-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+          necessitatibus dolor architecto eveniet illo tempore repellat, sed et
+          ipsa quod aspernatur nisi quam dignissimos fugiat? Repellendus animi
+          voluptatibus commodi ipsa blanditiis, est eaque tenetur dolor
+          cupiditate quam? Officia, ex ullam?
+        </p>
+        <h3 class="price"><b>Price: $150</b></h3>
+      </div>
+      <div class="product-action">
+        <button id="cart">Add to cart</button>
+      </div>
+    </section>
+    <section class="product" id="perfume">
+      <div class="product-header" id="product-header-three">
+        <!--img
+        src="https://images.unsplash.com/photo-1592842312573-dca0b185d2e0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=927"
+        alt="perfume"
+       <br-->
+        <h3 id="discount">30%OFF</h3>
+      </div>
+      <div class="product-body">
+        <label class="label" for="product">Beauty</label>
+        <h2 class="product-name">Perfume</h2>
+        <p class="product-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+          necessitatibus dolor architecto eveniet illo tempore repellat, sed et
+          ipsa quod aspernatur nisi quam dignissimos fugiat? Repellendus animi
+          voluptatibus commodi ipsa blanditiis, est eaque tenetur dolor
+          cupiditate quam? Officia, ex ullam?
+        </p>
+        <h3 class="price"><b>Price: $300</b></h3>
+      </div>
+      <div class="product-action">
+        <button id="cart">Add to cart</button>
+      </div>
+    </section>
+  </body>
+</html>

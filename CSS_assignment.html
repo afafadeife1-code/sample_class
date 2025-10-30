@@ -3,44 +3,175 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog Post Cards</title>
-    <style>
-      * {
-        margin: 0;
-        box-sizing: 0;
-        padding: 0;
-      }
-      h2:hover {
-        color: blue;
-      }
-      p {
-        font-size: x-small;
-        color: bisque;
-      }
-      div {
-        padding: 100px;
-        margin: 10px;
-        background-color: brown;
-      }
-    </style>
+    <title>Blog Cards</title>
   </head>
   <body>
-    <div>
-      <h2>The Beauty of Simplicity</h2>
-      <p>Author: Afaf Jimoh</p>
-      <span>Date: October 23, 2025</span>
-    </div>
+    <section id="blog-page">
+      <style>
+        * {
+          margin: 0;
+          box-sizing: 0;
+          padding: 0;
+        }
+        h2:hover {
+          color: blue;
+        }
+        p {
+          font-size: x-small;
+          color: bisque;
+        }
+        .drinks {
+          padding: 100px;
+          box-sizing: 100%;
+          margin: 20px;
+          background-color: brown;
+          background-size: cover;
+          box-shadow: 8px 8px 15px black;
+          border-radius: 10px;
+        }
+        #readbutton {
+          background-color: #65bf45;
+          border-width: 3px;
+          border-radius: 20px;
+          border-color: rgb(0, 0, 0);
+          padding: 4px;
+        }
+        .blogimage {
+          width: 300px;
+          height: 300px;
+          border-radius: 10px;
+        }
+        #blog-two {
+          background-color: rgb(193, 73, 13);
+        }
+      </style>
+      <div class="drinks">
+        <img
+          class="blogimage"
+          src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1167"
+          alt="coffee"
+        />
+        <h2>How to make tea</h2>
+        <span>Date: October 23, 2025</span>
+        <p>Author: Afaf Jimoh</p>
+        <footer>
+          <button id="readbutton"><a href="readmore.htm">Readmore</a></button>
+        </footer>
+      </div>
 
-    <div>
-      <h2>Mastering CSS Layouts</h2>
-      <p>Author: Afaf Jimoh</p>
-      <span> October 21, 2025</span>
-    </div>
+      <div class="drinks" id="blog-two">
+        <img
+          class="blogimage"
+          src="https://images.unsplash.com/photo-1547595628-c61a29f496f0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1287"
+          alt="wine"
+        />
+        <h2>How to make wine</h2>
+        <span> October 21, 2025</span>
+        <p>Author: Afaf Jimoh</p>
+        <footer>
+          <button id="readbutton"><a href="readmore.htm">Readmore</a></button>
+        </footer>
+      </div>
 
-    <div>
-      <h2>Finding Inspiration in Code</h2>
-      <p>Author: Afaf Jimoh</p>
-      <span>Date: October 20, 2025</span>
-    </div>
+      <div class="drinks">
+        <h3 id="discount">20%OFF</h3>
+        <img
+          class="blogimage"
+          src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1287"
+          alt="coffee"
+        />
+        <h2>How to make coffee</h2>
+        <span>Date: October 20, 2025</span>
+        <p>Author: Afaf Jimoh</p>
+        <footer>
+          <button id="readbutton"><a href="readmore.htm">Readmore</a></button>
+        </footer>
+      </div>
+    </section>
+    <section>
+      <style>
+        .product-image {
+          padding: 100px;
+          box-sizing: 100%;
+          margin: 20px;
+          background-color: palevioletred;
+          background-size: cover;
+          box-shadow: 8px 8px 15px black;
+          border-radius: 10px;
+        }
+        .product-image img{
+          width: 100%;
+          height: 50%;
+           border-radius: 10px;
+        }
+        .price {
+          color: rgb(245, 168, 181);
+          background-color: rgb(204, 45, 106);
+          box-shadow: 5px 5px 5px black;
+          border-color: #000000;
+          border-radius: 10px;
+          border-style: inset;
+          border-width: 2px;
+          padding: 5px;
+        }
+        .description {
+          font-size: medium;
+          color: rgb(228, 211, 227);
+        }
+        .discount{
+          text-align: right;
+        }
+      </style>
+      <h1>Products</h1>
+             <div class="product-image">
+        <h2 class="discount">20%OFF</h2>
+          <img
+            src="https://images.unsplash.com/photo-1687195821497-fed0346cdc34?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1287"
+            alt="lip-gloss"
+          />
+       
+        <h2>Lip Gloss</h2>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          accusantium, quas rem deserunt veniam cupiditate eaque, explicabo amet
+          officiis odit distinctio architecto id? Ipsam in minus temporibus
+          aperiam id ea ducimus optio delectus. Voluptatibus ducimus rem,
+          quaerat corrupti illum tenetur.
+        </p>
+        <h3 class="price">Price: $250</h3>
+      </div>
+      <div class="product-image">
+        <h2 class="discount">20%OFF</h2>
+        <img
+          src="https://images.unsplash.com/photo-1580694500583-21a6189e6b56?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070"
+          alt="highlighter"
+        />
+        <h2>Highlighter</h2>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          accusantium, quas rem deserunt veniam cupiditate eaque, explicabo amet
+          officiis odit distinctio architecto id? Ipsam in minus temporibus
+          aperiam id ea ducimus optio delectus. Voluptatibus ducimus rem,
+          quaerat corrupti illum tenetur.
+        </p>
+        <h3 class="price">Price: $200</h3>
+      </div>
+      <div class="product-image">
+        <h2 class="discount">20%OFF</h2>
+        <img
+          src="https://images.unsplash.com/photo-1592842312573-dca0b185d2e0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=927"
+          alt="perfume"
+        />
+        <h2>Perfume</h2>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          accusantium, quas rem deserunt veniam cupiditate eaque, explicabo amet
+          officiis odit distinctio architecto id? Ipsam in minus temporibus
+          aperiam id ea ducimus optio delectus. Voluptatibus ducimus rem,
+          quaerat corrupti illum tenetur.
+        </p>
+        <h3 class="price">Price: $300</h3>
+      </div>
+    </section>
   </body>
 </html>

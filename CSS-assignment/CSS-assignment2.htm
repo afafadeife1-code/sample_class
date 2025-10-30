@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Tasks</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .drinks {
+        border-style: ridge;
+        border-radius: 20px;
+        border-width: solid;
+        border-color: black;
+        margin: 20px;
+        padding: 10px 30px;
+        height: 100%;
+        width: 100%;
+        box-shadow: 5px 10px 20px black;
+      }
+      #coffee {
+        background-color: #703526;
+      }
+      #coffee:hover {
+        background-color: #65461f;
+        box-shadow: 10px 10px 10px black;
+      }
+      #wine {
+        background-color: #69132f;
+      }
+      #wine:hover {
+        background-color: #811036;
+        box-shadow: 10px 10px 10px black;
+      }
+      #tea {
+        background-color: #694313;
+      }
+      #tea:hover {
+        background-color: #916126;
+        box-shadow: 10px 10px 10px black;
+      }
+      .blog-description {
+        font-size: small;
+        color: antiquewhite;
+      }
+      .blog-date {
+        font-size: small;
+        border-style: ridge;
+        border-radius: 5px;
+        border-color: black;
+        background-color: rgb(137, 118, 93);
+      }
+      #readmore {
+        border-style: solid;
+        background-color: rgb(137, 118, 93);
+        border-radius: 8px;
+        padding: 2px 4px;
+      }
+      .drinks img {
+        height: 500px;
+        width: 500px;
+        border-style: solid;
+        border-radius: 15px;
+      }
+      #author {
+        color: rgba(53, 23, 1, 0.728);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Blog Cards</h1>
+    <div class="drinks" id="coffee">
+      <img
+        class="blogimage"
+        src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1287"
+        alt="coffee"
+      />
+      <h2>
+        How to make a coffee <span class="blog-date">October 5th 2025</span>
+      </h2>
+      <p class="blog-description">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quas
+        quod voluptatem, quaerat tempora dolorum veniam quae odio aliquam odit
+        aspernatur vel, voluptatum ducimus? Expedita ducimus tempore alias qui
+        quidem pariatur at nisi. Veniam quibusdam corporis quod rerum recusandae
+        praesentium!
+      </p>
+      <address id="author"><b>Afaf Jimoh</b></address>
+      <button id="readmore"><a href="readmore.htm">Readmore</a></button>
+    </div>
+    <div class="drinks" id="wine">
+      <img
+        class="blogimage"
+        src="https://images.unsplash.com/photo-1547595628-c61a29f496f0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1287"
+        alt="wine"
+      />
+      <h2>How to make wine <span class="blog-date">November 8th 2025</span></h2>
+      <p class="blog-description">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quas
+        quod voluptatem, quaerat tempora dolorum veniam quae odio aliquam odit
+        aspernatur vel, voluptatum ducimus? Expedita ducimus tempore alias qui
+        quidem pariatur at nisi. Veniam quibusdam corporis quod rerum recusandae
+        praesentium!
+      </p>
+      <address id="author"><b>Afaf Jimoh</b></address>
+      <button id="readmore"><a href="readmore.htm">Readmore</a></button>
+    </div>
+    <div class="drinks" id="tea">
+      <img
+        class="blog-image"
+        src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1167"
+        alt="tea"
+      />
+      <h2>How to make tea <span class="blog-date">January 1st 2025</span></h2>
+      <p class="blog-description">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quas
+        quod voluptatem, quaerat tempora dolorum veniam quae odio aliquam odit
+        aspernatur vel, voluptatum ducimus? Expedita ducimus tempore alias qui
+        quidem pariatur at nisi. Veniam quibusdam corporis quod rerum recusandae
+        praesentium!
+      </p>
+      <address id="author"><b>Afaf Jimoh</b></address>
+      <button id="readmore"><a href="readmore.htm">Readmore</a></button>
+    </div>
+  </body>
+</html>
